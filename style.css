@@ -1312,15 +1312,17 @@ footer a:hover{
   .timeline-container{
     margin-left: 0% !important;
   }
-
+ 
+ 
   .set{
-    margin-left: 15%;
-    margin-top: -10%;
+    margin-left: 2%;
+    margin-top: 3%;
   }
 
   .set1{
-    margin-left: 15%;
+    margin-left: 2%;
   }
+
 }
 
 @media only screen and (max-width: 768px) and (min-width: 600px){
@@ -1501,12 +1503,12 @@ footer a:hover{
 }
 
   .set{
-    margin-left: 2%;
-    margin-top: 3%;
+    margin-left: 15%;
+    margin-top: -10%;
   }
 
   .set1{
-    margin-left: 2%;
+    margin-left: 15%;
   }
 
 
