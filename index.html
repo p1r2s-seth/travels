@@ -432,24 +432,66 @@
 <div class="container mb_40" id="contact">
 	<div class="row align-items-center">
 		<div class="newsletter">
-			<h3 class="news_text">Subscribe to get information, latest news and other 
-			interesting offers about us</h3>
-			<div class="steps">
-  <form action="#" method="get" target="_self">
-  <input type="name" placeholder="&#x1F50D Enter your email" class="inpu1" required/>
-</form>
-        
+			<h3 class="news_text">Find Us At</h3>
+			<div class="steps1">
 
-        <div class="bell">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScIHuA7WEFlPle-czAwKiozk4gz7PnvtlOIGp7_F3ac9WJUoQ/viewform">
-         <i class="fas fa-bell" style="color: #FFA07A"></i>
-       </a>
+        <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
+          <div class="card resp shadow_box">
+            <div class="card-body">
+              
+              <div class="card-image" style="color: #13689f;">
+                <i class="fa-solid fa-phone fa-3x"></i>
+              </div>
+              <!-- <h4 class="card-title">Phone:</h4> -->
+              <p class="card-text">
+              <a href="tel:+91 9999939646" style="font-weight: 300 !important;">+91 9999939646</a><br>
+              <a href="tel:+91 9212004790" style="font-weight: 300 !important;">+91 9212004790</a><br>
+              <a href="tel:011-40192662" style="font-weight: 300 !important;">011-40192662(61-65)</a>
+              </p>
             </div>
+          </div>
+        </div> 
 
-</div>
+        <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
+          <a href="https://goo.gl/maps/JpzZHhJdrLKbUN1M8">
+          <div class="card resp shadow_box">
+            <div class="card-body">
+              
+              <div class="card-image" style="color: #65c192;">
+                <i class="fa-solid fa-map-marker-alt fa-3x"></i>
+              </div>
+              <!-- <h4 class="card-title">Address</h4> -->
+              <p class="card-text">332,333,334 Vardhman Diamond Plaza D.B Gupta Road, New Delhi-110055</p>
+            </div>
+          </div>
+        </a>
+        </div> 
+
+        <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
+          <a href="mailto:reservation@uplifttravels.co.in">
+          <div class="card resp shadow_box">
+            <div class="card-body">
+              
+              <div class="card-image" style="color: #e93783;">
+                <i class="fa-solid fa-envelope fa-3x"></i>
+              </div>
+              <!-- <h4 class="card-title">Email</h4> -->
+              <p class="card-text">reservation@uplifttravels.co.in</p>
+            </div>
+          </div>
+        </a>
+        </div> 
+       
+        <div class="map container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.4314112458624!2d77.20517837393965!3d28.64679858343551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd683f5a8cbd%3A0x851b41d4b50767b0!2sVardhman%20Diamond%20Plaza%2C%20Desh%20Bandhu%20Gupta%20Rd%2C%20Motia%20Khan%2C%20Sadar%20Bazaar%2C%20New%20Delhi%2C%20Delhi%20110055!5e0!3m2!1sen!2sin!4v1686652630190!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+      </div>
 		</div>
 	</div>
 </div>
+
+
 
 		<!-- FOOTER -->
 <footer>
@@ -464,7 +506,7 @@
          <div class="topic">Contact us</div>
          <div class="phone">
            <a href="tel:+91 9999939646"><i class="fa fa-phone lower_icon"></i>+91 9999939646</a>
-           <a href="tel:+91 9212004790"></i>+91 9212004790</a>
+           <a href="tel:+91 9212004790">+91 9212004790</a>
          </div>
          <div class="phone">
            <a href="tel:011-40192662"><i class="fa-solid fa-phone-volume lower_icon"></i>+91 011-40192662(61-65)
@@ -498,15 +540,15 @@
      <div class="right box">
        <div class="topic">Get In Touch</div>
        <form action="https://api.web3forms.com/submit" method="POST" id="form">
-          <input type="hidden" name="access_key" value="0955704a-cad3-4479-a971-ec0ef8284150" />
+          <input type="hidden" name="access_key" value="70ad0611-6d52-4d1f-94c6-f3825a6e6155" />
           <input type="hidden" name="subject" value="New Submission from Web3Forms" />
           <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
           <label for="phone" class=""></label>
-         <input type="text" placeholder="Enter your phone number" name="phone">
+         <input type="text" placeholder="Enter your phone number" name="phone" required>
 
          <label for="query" class=""></label>
-         <input type="text" placeholder="Enter your query" name="query">
+         <input type="text" placeholder="Enter your query" name="query" required>
          <input type="submit" name="" value="Send">
          <p class="text-base text-center text-gray-400" id="result"></p>
        </form>
@@ -543,7 +585,7 @@ form.addEventListener("submit", function (e) {
     .then(async (response) => {
       let json = await response.json();
       if (response.status == 200) {
-        result.innerHTML = "Thankyou for filing all the details. We will contact you back within 48 Hours.";
+        result.innerHTML = "Thankyou for filing all the details. We will contact you back within 24 Hours.";
         result.classList.remove("text-gray-500");
         result.classList.add("text-green-500");
       } else {
