@@ -149,6 +149,79 @@ $(document).ready(function($) {
     }
   });
   
+  });
+
+  //CONTACT FORM FOR HOTEL 1
+function closeForm() {
+  $('.form-popup-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
   
+  /* Contact Form Interactions */
+  $('#btnOpenForm1').on('click', function(event) {
+    event.preventDefault();
+
+    $('.form-popup-bg').addClass('is-visible');
+  });
+  
+    //close popup when clicking x or off popup
+  $('.form-popup-bg').on('click', function(event) {
+    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+  
+  });
+
+
+    //CONTACT FORM FOR HOTEL 2
+function closeForm() {
+  $('.form-popup-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
+  
+  /* Contact Form Interactions */
+  $('#btnOpenForm2').on('click', function(event) {
+    event.preventDefault();
+
+    $('.form-popup-bg').addClass('is-visible');
+  });
+  
+    //close popup when clicking x or off popup
+  $('.form-popup-bg').on('click', function(event) {
+    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+  
+  });
+
+
+
+      //CONTACT FORM FOR HOTEL 3
+function closeForm() {
+  $('.form-popup-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
+  
+  /* Contact Form Interactions */
+  $('#btnOpenForm3').on('click', function(event) {
+    event.preventDefault();
+
+    $('.form-popup-bg').addClass('is-visible');
+  });
+  
+    //close popup when clicking x or off popup
+  $('.form-popup-bg').on('click', function(event) {
+    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
   
   });
