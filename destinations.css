@@ -243,6 +243,15 @@ html{
   .portfolio-details .swiper-button-next {
     display: none;
   }
+
+  .breadcrumbs .page-header h2{
+    font-size: 60px;
+  }
+
+  .portfolio-margin{
+    margin-top: 5%;
+  }
+
 }
 
 .portfolio-details .portfolio-info h3 {
