@@ -35,7 +35,7 @@ html{
 
 .breadcrumbs .page-header:before {
   content: "";
-  background-color: rgba(207, 89, 54, 0.8);
+  background-color: rgba(23, 108, 173, 0.8);
   position: absolute;
   inset: 0;
 }
@@ -54,7 +54,7 @@ html{
 }
 
 .breadcrumbs nav {
-  background-color: #f4bfaf;
+  background-color: #64ace2;
   padding: 20px 0;
   margin-bottom: 3%;
 }
@@ -67,11 +67,11 @@ html{
   padding: 0;
   font-size: 16px;
   font-weight: 600;
-  color: #f7966f;
+  color: #22689d;
 }
 
 .breadcrumbs nav ol a {
-  color: #f7966f;
+  color: #3999e3;
   transition: 0.3s;
 }
 
@@ -86,7 +86,7 @@ html{
 .breadcrumbs nav ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #f7966f;
+  color: #3999e3;
   content: "/";
 }
 
