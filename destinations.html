@@ -1,376 +1,877 @@
+<!-- =========================================
+DESTINATIONS.HTML
+========================================= -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Destinations | Uplift Travels</title>
 
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <!-- favicon -->
-  <link rel="icon" type="png/jpg/svg" href="img/logo.png">
+    <title>Destinations | Uplift Travels</title>
 
-<link href="https://unpkg.com/pattern.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  					<!-- Font Awesome icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+        	<!-- Font Awesome icons-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/af145daacb.js" crossorigin="anonymous"></script>
-       
-       <style type="text/css">
-         .aln{
-          margin-top: -9.5% !important;
-         }
-       </style>
 
-	<link rel="stylesheet" type="text/css" href="destinations.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-	
-	      <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.min.css">
-	<script type="text/javascript" src="index.js"></script>
-  <script type="text/javascript" src="main.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="destinations.css">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: poppins;
+    }
+  </style>
+
 </head>
+
 <body>
 
   <div class="wh-api">
-    <div class="wh-fixed">
-      <a href="https://api.whatsapp.com/send?phone=919999939646&text=Hi, I have a travel related query." target="_blank">
-        <button class="wh-ap-btn"></button>
-      </a>
-    </div>
-  </div>
+	<div class="wh-fixed">
+		<a href="https://api.whatsapp.com/send?phone=919999939646&text=Hi, I have a travel related query." target="_blank">
+			<button class="wh-ap-btn"></button>
+		</a>
+	</div>
+</div>
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); margin: 0 !important;">
-        <div class="container position-relative">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-6 text-center">
-              <h2>All Destinations</h2>
-              <p>Explore the world with us. Find all the top destinations around the globe to complete your bucket list. We make sure all you have to worry about is packing your luggage. Rest assured, everything is on us.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav>
+    <!-- =========================================
+    NAVBAR
+    ========================================= -->
+
+<header class="navbar">
+
+    <div class="container nav-wrapper">
+
+        <!-- LOGO -->
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+
+        <!-- HOME LINK -->
+        <a href="index.html" class="home-link">
+
+            <!-- HOME ICON -->
+           <i class="fa-solid fa-house"></i>
+
+            <span>Home</span>
+
+        </a>
+
+    </div>
+
+</header>
+
+    <!-- =========================================
+    HERO
+    ========================================= -->
+
+    <section class="destinations-hero">
+
         <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Destinations</li>
-          </ol>
+
+            <span class="hero-tag">
+                Curated Travel Experiences
+            </span>
+
+            <h1>
+                Explore Destinations
+            </h1>
+
+            <p>
+                Discover thoughtfully curated and customisable domestic and international destinations
+                designed for luxury, leisure, family and group travel experiences.
+            </p>
+
         </div>
-      </nav>
-    </div><!-- End Breadcrumbs -->
+
+    </section>
+
+    <!-- =========================================
+    FILTERS
+    ========================================= -->
+
+    <section class="destination-filters">
+
+        <div class="container">
+
+            <div class="filter-wrapper">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="asia">
+                    Asia
+                </button>
+
+                <button class="filter-btn" data-filter="middle-east">
+                    Middle East
+                </button>
+
+                <button class="filter-btn" data-filter="europe">
+                    Europe
+                </button>
+
+                <button class="filter-btn" data-filter="islands">
+                    Islands
+                </button>
+
+                <button class="filter-btn" data-filter="oceania">
+                    Oceania
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+    DESTINATION GRID
+    ========================================= -->
+
+    <section class="destinations-grid-section">
+
+    <div class="container">
+
+        <div class="destinations-grid">
+
+            <!-- FEATURED UAE -->
+            <div class="destination-card featured-card"
+
+data-category="middle-east"
+
+data-title="United Arab Emirates"
+
+data-subtitle="5 Nights Luxury City Escape"
+
+data-image="https://images.pexels.com/photos/13256066/pexels-photo-13256066.jpeg?_gl=1*1nlf46q*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODEwMDE1NDIkbzgkZzEkdDE3ODEwMDI0MjIkajQ2JGwwJGgw"
+
+data-itinerary="5N Dubai"
+
+data-hotel="★★★★ 4 Star Hotels"
+
+data-inclusions="Daily Breakfast|E-Visa|Dubai City Tour|Desert Safari with BBQ Dinner|Dhow Cruise Marina with Dinner|Burj Khalifa 124th Floor Entry|Return Airport Transfers"
+
+data-cost="₹35,000 Per Person">
+
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1400&auto=format&fit=crop"
+                        alt="Dubai">
+
+                <div class="destination-overlay">
+                    <span>Luxury • Premium • City</span>
+                    <h3>United Arab Emirates</h3>
+                    <p>Premium City Experiences</p>
+                </div>
+
+            </div>
+
+            <!-- SINGAPORE -->
+            <div class="destination-card"
+
+data-category="asia"
+
+data-title="Singapore"
+
+data-subtitle="5 Nights Curated Experience"
+
+data-image="https://images.pexels.com/photos/15480459/pexels-photo-15480459.jpeg?_gl=1*1ozfivl*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODA4NDk0NDMkbzckZzEkdDE3ODA4NDk1OTQkajUxJGwwJGgw"
+
+data-itinerary="5N Singapore"
+
+data-hotel="★★★★ 4 Star Hotels"
+
+data-inclusions="Daily Breakfast|Universal Studios Singapore|Sentosa Island|Night Safari|Gardens by the Bay|Return Airport Transfers"
+
+data-cost="₹50,000 Per Person (Twin Sharing)">
 
 
 
-      <section id="portfolio" class="portfolio sections-bg">
-      <div class="container">
+                <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1400&auto=format&fit=crop" alt="Singapore">
 
-<div class="row">
-    <div class="col-12">
-      <h4 class="card-title1">Explore</h4>
-      <div class="title-heading">
-        All Destinations
-      </div>
+                <div class="destination-overlay">
+                    <span>Luxury • Family</span>
+                    <h3>Singapore</h3>
+                    <p>Curated Experiences</p>
+                </div>
+
+            </div>
+
+            <!-- THAILAND -->
+            <div class="destination-card"
+
+data-category="asia"
+
+data-title="Thailand"
+
+data-subtitle="4 Nights Tropical Escape"
+
+data-image="https://images.pexels.com/photos/5247279/pexels-photo-5247279.jpeg?_gl=1*dgk1cg*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODA4NDk0NDMkbzckZzEkdDE3ODA4NDk1NjIkajgkbDAkaDA."
+
+data-itinerary="2N Pattaya|2N Bangkok"
+
+data-hotel="★★★★ 4 Star Hotels"
+
+data-inclusions="Daily Breakfast|Coral Island Tour|Safari World|Marine Park|Chao Phraya Dinner Cruise|Inter Hotel Transfers|Return Airport Transfers"
+
+data-cost="₹25,000 Per Person (Twin Sharing)">
+
+
+
+                <img src="https://images.pexels.com/photos/35126698/pexels-photo-35126698.jpeg?_gl=1*q77gtw*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODA4NDk0NDMkbzckZzEkdDE3ODA4NTAxNjMkajUzJGwwJGgw"
+                        alt="Thailand">
+
+                <div class="destination-overlay">
+                    <span>Beach • Leisure</span>
+                    <h3>Thailand</h3>
+                    <p>6 Nights Experience</p>
+                </div>
+
+            </div>
+
+            <!-- VIETNAM -->
+                    <div class="destination-card"
+                         data-category="asia"
+                         data-title="Vietnam"
+data-subtitle="8 Nights Curated Experience"
+data-image="https://cdn.pixabay.com/photo/2022/11/01/07/55/da-nang-7561548_1280.jpg"
+data-itinerary="
+2N Hanoi|
+3N Da Nang|
+3N Phu Quoc|
+1N Halong Bay Cruise"
+data-hotel="★★★★ 4 Star Hotels"
+data-inclusions="
+Daily Breakfast|
+Ninh Binh Tour|
+Bana Hills|
+Coconut Forest|
+4 Island Tour|
+Vin Wonder|
+Vin Safari|
+Return Airport Transfers|
+Private Transfers Throughout"
+data-cost="₹45,000 Per Person (Twin Sharing)">
+
+                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1400&auto=format&fit=crop"
+                        alt="Vietnam">
+
+                <div class="destination-overlay">
+                    <span>Culture • Scenic</span>
+                    <h3>Vietnam</h3>
+                    <p>8 Nights Experience</p>
+                </div>
+
+            </div>
+
+            <!-- MALDIVES -->
+            <div class="destination-card"
+
+data-category="islands"
+
+data-title="Maldives"
+
+data-subtitle="Tailor-Made Island Escapes"
+
+data-image="https://images.pexels.com/photos/9149367/pexels-photo-9149367.jpeg?_gl=1*1u51wj2*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODEwMDE1NDIkbzgkZzEkdDE3ODEwMDI5NTUkajUxJGwwJGgw"
+
+data-itinerary="★★★★ 4 Star Beach Resorts|★★★★★ 5 Star Premium Resorts|Overwater Villas|Private Pool Villas|All Inclusive Resorts|Adults Only Resorts"
+
+data-hotel="Beach Villas • Water Villas • Luxury Resorts"
+
+data-inclusions="Return Flights|Resort Accommodation|Speedboat Transfers|Seaplane Transfers|Daily Breakfast|Half Board Options|Full Board Options|All Inclusive Plans|Travel Insurance Assistance"
+
+data-cost="Starting from ₹90,000 Per Person">
+
+                <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=1200&auto=format&fit=crop"
+                        alt="Maldives">
+
+                <div class="destination-overlay">
+                    <span>Luxury • Honeymoon</span>
+                    <h3>Maldives</h3>
+                    <p>Island Retreat</p>
+                </div>
+
+            </div>
+
+            <!-- MALAYSIA -->
+            <div class="destination-card"
+
+data-category="asia"
+
+data-title="Malaysia"
+
+data-subtitle="6 Nights Tropical Discovery"
+
+data-image="https://images.pexels.com/photos/3426326/pexels-photo-3426326.jpeg?_gl=1*d6dtbx*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODEwMDE1NDIkbzgkZzEkdDE3ODEwMDMyNjgkajMkbDAkaDA."
+
+data-itinerary="3N Kuala Lumpur|3N Langkawi"
+
+data-hotel="★★★★ 4 Star Hotels"
+
+data-inclusions="Daily Breakfast|Kuala Lumpur City Tour|Batu Caves Visit|Genting Highlands Excursion|Langkawi Island Stay|Airport Transfers|Intercity Transfers|Twin Sharing Accommodation"
+
+data-cost="₹60,000 Per Person (Twin Sharing)">
+
+                <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=1200&auto=format&fit=crop" alt="Malaysia">
+
+                <div class="destination-overlay">
+                    <span>Family • Leisure</span>
+                    <h3>Malaysia</h3>
+                    <p>City & Nature</p>
+                </div>
+
+            </div>
+
+            <!-- FEATURED EUROPE -->
+            <div class="destination-card featured-card"
+
+data-category="europe"
+
+data-title="Europe"
+
+data-subtitle="Tailor-Made Multi-Country Journeys"
+
+data-image="https://images.pexels.com/photos/16309117/pexels-photo-16309117.jpeg?_gl=1*19ct31b*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODA4NDk0NDMkbzckZzEkdDE3ODA4NTA0MDUkajU2JGwwJGgw"
+
+data-itinerary="Switzerland + Paris + Italy|Switzerland + Austria + Germany|Italy + Greece|Spain + Portugal|Scandinavia|Eastern Europe|Custom Europe Combinations"
+
+data-hotel="★★★★ 4 Star Hotels | ★★★★★ 5 Star Luxury Hotels"
+
+data-inclusions="Visa Assistance|Inter-City Rail Passes|Sightseeing Tours|Airport Transfers|Travel Insurance Assistance|Custom Itinerary Planning|Hotel Bookings|Multi-Country Coordination"
+
+data-cost="Starting from ₹150,000 Per Person (Varies by Route & Season)">
+
+
+                <img src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?q=80&w=1400&auto=format&fit=crop"
+                        alt="Europe">
+
+                <div class="destination-overlay">
+                    <span>Luxury • Culture</span>
+                    <h3>Europe</h3>
+                    <p>Multi-City Experiences</p>
+                </div>
+
+            </div>
+
+            <!-- JAPAN -->
+            <div class="destination-card"
+
+data-category="asia"
+
+data-title="Japan"
+
+data-subtitle="8 Nights Cultural Discovery"
+
+data-image="https://images.pexels.com/photos/20392882/pexels-photo-20392882.jpeg?_gl=1*1ha4e1b*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODEwMDE1NDIkbzgkZzEkdDE3ODEwMDI3NDckajE1JGwwJGgw"
+
+data-itinerary="3N Tokyo|2N Kyoto|3N Osaka"
+
+data-hotel="★★★★ 4 Star & ★★★★★ 5 Star Premium Hotels"
+
+data-inclusions="Private Airport Transfers|Mt Fuji & Hakone Tour|Lake Ashi Cruise|Tokyo Disneyland Tickets & Transfers|Bullet Train Tokyo to Kyoto|Kyoto City Tour|Kinkaku-ji Temple|Arashiyama Bamboo Grove|Nara Park|Todai-ji Temple|Bullet Train Kyoto to Osaka|Osaka City Tour|Osaka Castle|Dotonbori|Umeda Sky Building|Shinsaibashi Shopping|Universal Studios Tickets & Transfers"
+
+data-cost="₹180,000 Per Person (Twin Sharing)">
+
+                <img src="https://images.pexels.com/photos/35600154/pexels-photo-35600154.jpeg?_gl=1*1jvih59*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODAwNzMzMzMkbzYkZzEkdDE3ODAwNzMzNDYkajQ3JGwwJGgw" alt="Japan">
+
+                <div class="destination-overlay">
+                    <span>Luxury • Culture</span>
+                    <h3>Japan</h3>
+                    <p>Seasonal Experiences</p>
+                </div>
+
+            </div>
+
+            <!-- BALI -->
+            <div class="destination-card"
+
+data-category="islands"
+
+data-title="Bali"
+
+data-subtitle="6 Nights Island Escape"
+
+data-image="http://images.pexels.com/photos/11186280/pexels-photo-11186280.jpeg?_gl=1*l95o88*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODEwMDE1NDIkbzgkZzEkdDE3ODEwMDI0NzkkajU5JGwwJGgw"
+
+data-itinerary="4N Seminyak|2N Ubud Private Pool Villa"
+
+data-hotel="★★★★ 4 Star Hotels"
+
+data-inclusions="Daily Breakfast|Uluwatu Temple with Kecak Dance|Tanah Lot Temple|Bali Zoo|Bali Swing|Kintamani Tour with Ubud Market|Return Airport Transfers|All Tours & Transfers on Private Basis"
+
+data-cost="₹40,000 Per Person">
+
+                <img src="https://images.pexels.com/photos/34356770/pexels-photo-34356770.jpeg?_gl=1*1g1nxy9*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODAwNzMzMzMkbzYkZzEkdDE3ODAwNzM0MjUkajQzJGwwJGgw" alt="Bali">
+
+                <div class="destination-overlay">
+                    <span>Luxury • Wellness</span>
+                    <h3>Bali</h3>
+                    <p>Island Escape</p>
+                </div>
+
+            </div>
+
+            <!-- Hong Kong & Macau -->
+           <div class="destination-card"
+
+data-category="asia"
+
+data-title="Hong Kong & Macau"
+
+data-subtitle="6 Nights Multi-City Experience"
+
+data-image="https://images.pexels.com/photos/25000709/pexels-photo-25000709.jpeg?_gl=1*t6608k*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODA4NDk0NDMkbzckZzEkdDE3ODA4NDk5NDckajUwJGwwJGgw"
+
+data-itinerary="4N Hong Kong|2N Macau"
+
+data-hotel="★★★★ 4 Star Hotels"
+
+data-inclusions="Hong Kong City Tour|Ocean Park|Disneyland 1 Day Pass|Macau City Tour|Ferry Tickets|Return Airport Transfers"
+
+data-cost="₹90,000 Per Person (Twin Sharing)">
+
+
+
+                <img src="https://images.pexels.com/photos/30542440/pexels-photo-30542440.jpeg?_gl=1*1j664e2*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODA4NDk0NDMkbzckZzEkdDE3ODA4NDk0ODIkajIxJGwwJGgw" alt="Hong Kong & Macau">
+
+                <div class="destination-overlay">
+    <span>City • Entertainment • Culture</span>
+    <h3>Hong Kong</h3>
+    <p>Iconic City Experiences</p>
+</div>
+
+            </div>
+
+            <!-- AUSTRALIA Featured-->
+          <div class="destination-card featured-card"
+
+data-category="oceania"
+
+data-title="Australia"
+
+data-subtitle="Tailor-Made Australian Journeys"
+
+data-image="https://images.pexels.com/photos/15206547/pexels-photo-15206547.jpeg?_gl=1*1etaoal*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODEwMDE1NDIkbzgkZzEkdDE3ODEwMDQxNjIkajMyJGwwJGgw"
+
+data-itinerary="Sydney|Melbourne|Gold Coast|Cairns|Great Barrier Reef|Hamilton Island|Whitsundays|Tasmania"
+
+data-hotel="★★★★ 4 Star & ★★★★★ 5 Star Premium Hotels"
+
+data-inclusions="Flights Assistance|Airport Transfers|Hotel Accommodation|Sightseeing Tours|Great Barrier Reef Experiences|Theme Park Passes|Island Escapes|Custom Itineraries"
+
+data-cost="Starting from ₹70,000 Per Person">
+
+                <img src="https://images.pexels.com/photos/2853638/pexels-photo-2853638.jpeg?_gl=1*123mouk*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODAwNzMzMzMkbzYkZzEkdDE3ODAwNzM1NzIkajI4JGwwJGgw" alt="Australia">
+
+                <div class="destination-overlay">
+                    <span>Adventure • Luxury</span>
+                    <h3>Australia</h3>
+                    <p>Premium Exploration</p>
+                </div>
+
+            </div>
+
+            <!-- MAURITIUS -->
+            <div class="destination-card"
+
+data-category="islands"
+
+data-title="Mauritius"
+
+data-subtitle="Tailor-Made Island Escapes"
+
+data-image="https://images.pexels.com/photos/36731927/pexels-photo-36731927.jpeg?_gl=1*wqssv*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODEwMDE1NDIkbzgkZzEkdDE3ODEwMDM4OTQkajUwJGwwJGgw"
+
+data-itinerary="★★★★ 4 Star Beach Resorts| ★★★★★ 5 Star Luxury Resorts|Private Pool Villas|All Inclusive Resorts|Honeymoon Packages|Family Getaways"
+
+data-hotel="Beach Resorts • Luxury Villas • Premium Island Retreats"
+
+data-inclusions="Return Flights|Resort Accommodation|Airport Transfers|Daily Breakfast|Half Board Options|All Inclusive Meal Plans|Island Excursions|Water Activities|Travel Insurance Assistance"
+
+data-cost="Starting from ₹90,000 Per Person">
+
+                <img src="https://images.pexels.com/photos/7744992/pexels-photo-7744992.jpeg?_gl=1*diuk91*_ga*NDY5MjQ2MzQ4LjE3Njk5MTY2OTE.*_ga_8JE65Q40S6*czE3ODAwNzMzMzMkbzYkZzEkdDE3ODAwNzM1MjAkajIwJGwwJGgw" alt="Mauritius">
+
+                <div class="destination-overlay">
+                    <span>Luxury • Beach</span>
+                    <h3>Mauritius</h3>
+                    <p>Tropical Retreat</p>
+                </div>
+
+            </div>
+
+        </div>
+
+<p class="destinations-note">
+    Looking for something different? We curate bespoke travel experiences across the globe. Get in touch with our travel specialists to design an itinerary tailored to your preferences.
+</p>
+
     </div>
+
+
+</section>
+
+    <!-- =========================================
+    FOOTER
+    ========================================= -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+
+    <!-- TOP GRID -->
+    <div class="footer-top">
+
+      <!-- BRAND -->
+      <div class="footer-brand">
+        <img src="img/logo.png" class="footer-logo">
+        <p>
+          IATA accredited travel company with 30+ years of experience in delivering seamless domestic and international travel solutions.
+        </p>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li>Flight Tickets</li>
+          <li>Hotels</li>
+          <li>Visa</li>
+          <li>Insurance</li>
+          <li>Group Packages</li>
+        </ul>
+      </div>
+
+      <!-- PACKAGES -->
+      <div class="footer-links">
+        <h4>Top Packages</h4>
+        <ul>
+          <li>Europe</li>
+          <li>Dubai</li>
+          <li>Singapore</li>
+          <li>Thailand</li>
+          <li>Bali</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- CONTACT (FULL WIDTH) -->
+    <div class="footer-contact">
+
+      <h4>Contact Us</h4>
+
+      <div class="contact-grid">
+
+        <div class="contact-item">
+          <span>🕒</span>
+          <p>Monday–Saturday: 10AM–6PM</p>
+        </div>
+
+        <div class="contact-item">
+          <span>📞</span>
+          <p>+91 9999939646, +91 9212004790<br>011-40192662(61-65)</p>
+        </div>
+
+        <div class="contact-item">
+          <span>✉️</span>
+          <p>reservation@uplifttravels.co.in</p>
+        </div>
+
+        <div class="contact-item">
+          <span>📍</span>
+          <p>332,333,334 Vardhman Diamond Plaza D.B Gupta Road, New Delhi-110055</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+      © 2026 Uplift Travels. All rights reserved.
+    </div>
+
   </div>
+</footer>
 
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+<div class="destination-modal" id="destinationModal">
 
-          <div>
-            <ul class="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-asia">Asia</li>
-              <li data-filter=".filter-australia">Australia</li>
-              <li data-filter=".filter-africa">Africa</li>
-              <li data-filter=".filter-europe">Europe</li>
-            </ul><!-- End Portfolio Filters -->
-          </div>
+    <div class="destination-modal-overlay"></div>
 
-          <div class="row gy-4 portfolio-container" style="margin-top: 3%;">
+    <div class="destination-modal-box">
 
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item filter-asia">
-              <div class="portfolio-wrap">
-                <img src="img/Dubai.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Dubai</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹0,00,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 15 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
+        <button class="destination-modal-close">
+            ×
+        </button>
 
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-australia">
-              <div class="portfolio-wrap">
-                <img src="https://images.pexels.com/photos/2845013/pexels-photo-2845013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Australia </h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹0,00,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 15 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
+        <div class="destination-modal-image">
 
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-africa">
-              <div class="portfolio-wrap">
-                <img src="https://images.pexels.com/photos/29049/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>South Africa</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹0,00,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 15 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
-
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-europe">
-              <div class="portfolio-wrap">
-                <img src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>United Kingdom</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹0,00,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 15 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
-
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-asia">
-              <div class="portfolio-wrap">
-                <img src="https://images.pexels.com/photos/290597/pexels-photo-290597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Singapore</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹70,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 5 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
-
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-australia">
-              <div class="portfolio-wrap">
-                <img src="https://images.pexels.com/photos/710263/pexels-photo-710263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>New Zealand</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹0,00,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 15 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
-
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-africa">
-              <div class="portfolio-wrap">
-               <img src="https://images.pexels.com/photos/3529692/pexels-photo-3529692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Kenya</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹0,00,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 15 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
-
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-europe">
-              <div class="portfolio-wrap">
-               <img src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Greece</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹0,00,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 15 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
-
-            <a href="Countries/Asia/Maldives.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-asia">
-              <div class="portfolio-wrap">
-              <img src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Maldives</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹1,20,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 5 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
-
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-australia">
-              <div class="portfolio-wrap">
-            <img src="https://images.pexels.com/photos/9482125/pexels-photo-9482125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Bora Bora</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹0,00,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 15 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
-
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-africa">
-              <div class="portfolio-wrap">
-                <img src="https://images.pexels.com/photos/1851481/pexels-photo-1851481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Egypt</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹0,00,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 15 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
-
-            <a href="Countries/Asia/Singapore.html" target="_blank">
-            <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-europe">
-              <div class="portfolio-wrap">
-               <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Italy</h4>
-                  <h2 class="card1_title mob_card offset-lg-8 aln">₹0,00,000</h2>
-                  <br><p><i class="fa-solid fa-location-arrow"></i> 15 Day Trip</p>
-                </div>
-              </div>
-            </div></a><!-- End Portfolio Item -->
-
-            <a href="Countries/Asia/Thailand.html" target="_blank">
-              <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-asia">
-                <div class="portfolio-wrap">
-              <img src="https://images.pexels.com/photos/937465/pexels-photo-937465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Thailand</h4>
-                    <h2 class="card1_title mob_card offset-lg-8 aln">₹45,000</h2>
-                    <br><p><i class="fa-solid fa-location-arrow"></i> 5 Day Trip</p>
-                  </div>
-                </div>
-              </div></a><!-- End Portfolio Item -->
-  
-              <a href="Countries/Asia/Vietnam.html" target="_blank">
-              <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-asia">
-                <div class="portfolio-wrap">
-                  <img src="https://images.pexels.com/photos/2796627/pexels-photo-2796627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Vietnam</h4>
-                    <h2 class="card1_title mob_card offset-lg-8 aln">₹75,000</h2>
-                    <br><p><i class="fa-solid fa-location-arrow"></i> 7 Day Trip</p>
-                  </div>
-                </div>
-              </div></a><!-- End Portfolio Item -->
-  
-              <a href="Countries/Asia/Bali.html" target="_blank">
-              <div class="col-xl-4 col-md-6 portfolio-item portfolio-margin filter-asia">
-                <div class="portfolio-wrap">
-                 <img src="https://img.freepik.com/free-photo/woman-walking-big-entrance-gate-bali-indonesia_335224-378.jpg?t=st=1731138652~exp=1731142252~hmac=4a87169d20b51440d281eb98b7d35384d4d14e942ae2bebad9b0936f4d43b1ed&w=900" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Bali</h4>
-                    <h2 class="card1_title mob_card offset-lg-8 aln">₹65,000</h2>
-                    <br><p><i class="fa-solid fa-location-arrow"></i> 6 Day Trip</p>
-                  </div>
-                </div>
-              </div></a><!-- End Portfolio Item -->
-            
-
-
-          </div><!-- End Portfolio Container -->
+            <img id="modalImage" src="" alt="">
 
         </div>
 
-      </div>
-    </section><!-- End Portfolio Section -->
+        <div class="destination-modal-content">
 
+            <h2 id="modalTitle"></h2>
 
-      <!-- FOOTER -->
-<footer>
-   <div class="content">
-     <div class="left box">
-       <div class="upper">
-         <div class="topic">About us</div>
-         <p>Uplift Travels, which is an IATA accredited travel company established in 1991 serves as a full fledged service outbound Hospitality and Destination Management Company, Dealing in Domestic/International Tours, Hotel Bookings, Air Tickets, Visa services, Forex, Cruises, Car rentals etc.
-         </p>
-       </div>
-       <div class="lower">
-         <div class="topic">Contact us</div>
-         <div class="timings">
-          <i class="fas fa-clock lower_icon"></i><a>Monday-Saturday: 10AM-6PM</a>
+            <p class="modal-subtitle"
+               id="modalSubtitle"></p>
+
+            <div class="modal-section">
+
+                <h4>Itinerary</h4>
+
+                <div id="modalItinerary"></div>
+
+            </div>
+
+            <div class="modal-section">
+
+                <h4>Hotel Category</h4>
+
+                <p id="modalHotel"></p>
+
+            </div>
+
+            <div class="modal-section">
+
+                <h4>Inclusions</h4>
+
+                <ul id="modalInclusions"></ul>
+
+            </div>
+
+            <div class="modal-price">
+
+                Starting From
+
+                <span id="modalCost"></span>
+
+            </div>
+
+            <!-- <a href="#contact"
+               class="modal-enquire-btn">
+
+               Enquire Now
+            </a> -->
+
         </div>
-         <div class="phone">
-           <a href="tel:+91 9999939646"><i class="fa fa-phone lower_icon"></i>+91 9999939646</a>
-           <a href="tel:+91 9212004790">+91 9212004790</a>
-         </div>
-         <div class="phone">
-           <a href="tel:011-40192662"><i class="fa-solid fa-tty lower_icon"></i>+91 011-40192662(61-65)
-		       </a>
-         </div>
-         <div class="email">
-           <a href="mailto:reservation@uplifttravels.co.in"><i class="fas fa-envelope lower_icon"></i>reservation@uplifttravels.co.in</a>
-         </div>
-          <div class="phone">
-           <a href="#"><i class="fas fa-map-marker-alt lower_icon"></i>332,333,334 Vardhman Diamond Plaza D.B Gupta Road, New Delhi-110055
 
-
-
-    </a>
-         </div>
-                  <div class="media-icons">
-           <a href="#"><i class="fab fa-facebook-f"></i></a>
-           <a href="#"><i class="fab fa-instagram"></i></a>
-         </div>
-       </div>
-     </div>
-     <div class="middle box">
-       <div class="topic">Our Services</div>
-       <div class="footer_links"><a href="#">Group Packages</a></div>
-       <div class="footer_links"><a href="#">Flight Tickets</a></div>
-       <div class="footer_links"><a href="#">Hotels</a></div>
-       <div class="footer_links"><a href="#">Visa</a></div>
-       <div class="footer_links"><a href="#">Insurance</a></div>
-       <div class="footer_links"><a href="#">Passport</a></div>
-     </div>
-     <div class="middle box">
-      <div class="topic">Top Packages</div>
-      <div class="footer_links"><a href="#">Europe Package</a></div>
-      <div class="footer_links"><a href="#">Pilgrim Package</a></div>
-      <div class="footer_links"><a href="#">North East Package</a></div>
-      <div class="footer_links"><a href="#">Weekend getaway Package</a></div>
-      <div class="footer_links"><a href="#">Honeymoon Package</a></div>
-      <div class="footer_links"><a href="#">Family Package</a></div>
     </div>
-     <div class="right box">
-       <div class="topic">Get In Touch</div>
-       <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSchURlC-M6X-fi0Vx-wAU9lur0IXbucLRIn5qQvb6oiCYXCeA/formResponse" method="post" onsubmit="submitted=true">
-         <input type="text" placeholder="Enter your phone number" name="#">
-         <input type="text" placeholder="Enter your query" name="#">
-         <input type="submit" name="" value="Send">
 
-       </form>
-     </div>
-   </div>
-   <div class="bottom">
-     <p>Copyright © 2024 <a href="https://yemis.tech/" target="blank">Yemis Technologies</a> All rights reserved</p>
-   
- </footer>
+</div>
+
+    <!-- =========================================
+    JS
+    ========================================= -->
+
+   <script>
+
+/* =========================================
+   FILTER FUNCTIONALITY
+========================================= */
+
+const filterBtns = document.querySelectorAll('.filter-btn');
+const destinationCards = document.querySelectorAll('.destination-card');
+
+filterBtns.forEach(btn => {
+
+    btn.addEventListener('click', () => {
+
+        filterBtns.forEach(b =>
+            b.classList.remove('active'));
+
+        btn.classList.add('active');
+
+        const filter =
+            btn.getAttribute('data-filter');
+
+        destinationCards.forEach(card => {
+
+            const category =
+                card.getAttribute('data-category');
+
+            if (
+                filter === 'all' ||
+                category === filter
+            ) {
+
+                card.style.display = '';
+
+            } else {
+
+                card.style.display = 'none';
+            }
+
+        });
+
+    });
+
+});
 
 
+/* =========================================
+   DESTINATION MODAL
+========================================= */
 
-      <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+const modal =
+    document.getElementById('destinationModal');
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+const modalTitle =
+    document.getElementById('modalTitle');
+
+const modalSubtitle =
+    document.getElementById('modalSubtitle');
+
+const modalImage =
+    document.getElementById('modalImage');
+
+const modalHotel =
+    document.getElementById('modalHotel');
+
+const modalCost =
+    document.getElementById('modalCost');
+
+const modalItinerary =
+    document.getElementById('modalItinerary');
+
+const modalInclusions =
+    document.getElementById('modalInclusions');
+
+
+destinationCards.forEach(card => {
+
+    card.addEventListener('click', () => {
+
+        /* IMAGE */
+
+        modalImage.src =
+            card.dataset.image;
+
+        modalImage.alt =
+            card.dataset.title;
+
+        /* TITLE */
+
+        modalTitle.textContent =
+            card.dataset.title;
+
+        /* SUBTITLE */
+
+        modalSubtitle.textContent =
+            card.dataset.subtitle;
+
+        /* HOTEL */
+
+        modalHotel.textContent =
+            card.dataset.hotel;
+
+        /* COST */
+
+        modalCost.textContent =
+            card.dataset.cost;
+
+        /* ITINERARY */
+
+        modalItinerary.innerHTML = '';
+
+        if(card.dataset.itinerary){
+
+            const itineraryItems =
+                card.dataset.itinerary.split('|');
+
+            itineraryItems.forEach(item => {
+
+                modalItinerary.innerHTML +=
+                    `<p>${item}</p>`;
+
+            });
+
+        }
+
+        /* INCLUSIONS */
+
+        modalInclusions.innerHTML = '';
+
+        if(card.dataset.inclusions){
+
+            const inclusionItems =
+                card.dataset.inclusions.split('|');
+
+            inclusionItems.forEach(item => {
+
+                modalInclusions.innerHTML +=
+                    `<li>${item}</li>`;
+
+            });
+
+        }
+
+        /* OPEN MODAL */
+
+        modal.classList.add('active');
+
+        document.body.style.overflow = 'hidden';
+
+    });
+
+});
+
+
+/* =========================================
+   CLOSE MODAL
+========================================= */
+
+function closeModal() {
+
+    modal.classList.remove('active');
+
+    document.body.style.overflow = 'auto';
+}
+
+
+/* CLOSE BUTTON */
+
+document.querySelector('.destination-modal-close')
+    .addEventListener('click', closeModal);
+
+
+/* OVERLAY */
+
+document.querySelector('.destination-modal-overlay')
+    .addEventListener('click', closeModal);
+
+
+/* ESC KEY */
+
+document.addEventListener('keydown', (e) => {
+
+    if (
+        e.key === 'Escape' &&
+        modal.classList.contains('active')
+    ) {
+
+        closeModal();
+    }
+
+});
+
+</script>
 
 </body>
 
